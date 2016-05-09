@@ -1,0 +1,482 @@
+    1  apt-get install
+    2  sudo apt-get install
+    3  ls -la
+    4  dpkg -l > dpkg_20140724_2314.out
+    5  wc -l dpkg_20140724_2314.out
+    6  sudo apt-get install php5-mysql apache2  mysql-server php5-gd libapache2-mod-php5
+    7  sudo apt-get update
+    8  sudo apt-get install php5-mysql apache2  mysql-server php5-gd libapache2-mod-php5
+    9  dpkg -l > dpkg_20140724_2339.out
+   10  wc -l dpkg_20140724_2339.out
+   11  which perl
+   12  perl -v
+   13  which mysql
+   14  mysql -v
+   15  mysql -?
+   16  mysql -V
+   17  which php
+   18  php -?
+   19  php -v
+   20  cd /var/www
+   21  ls -l
+   22  vi index.html  
+   23  sudo vi index.html  
+   24  mysql -h localhost -u root -p
+   25  ls -l 
+   26  which wget
+   27  mkdir html
+   28  sudo mkdir html
+   29  cd html
+   30  sudo wget http://ftp.drupal.org/files/projects/drupal-x.x.tar.gz
+   31  sudo wget http://ftp.drupal.org/files/projects/drupal-7.30.tar.gz
+   32  tar -xzvf drupal-7.30.tar.gz  
+   33  sudo tar -xzvf drupal-7.30.tar.gz  
+   34  ls -l 
+   35  sudo mv drupal-7.30/* drupal-7.30/.htaccess  drupal-7.30/.gitignore  ./
+   36  ls -l 
+   37  sudo rmdir drupal-7.30/ 
+   38  ls -l ..
+   39  ps -ef | grep apach
+   40  cd ..
+   41  sudo chown -R www-data *
+   42  sudo apt-get install php5-gd
+   43  sudo apache restart
+   44  sudo service apache restart
+   45  sudo service apache2 restart
+   46  mysql -h localhost -u root -p
+   47  cd -
+   48  cd
+   49  uptime
+   50  perl -e '$r=7; $o=1; $p=5; while(++$cntp <= 5){ print "R(", $r, ") v. ", 'p' x $cntp, ": ",$r - $p * $cntp, " ", $p * $cntp, "\n"; print "Rooo(",3*$o+ $r, ") v. ", 'p' x $cntp, ": ",3*$o + $r - $p, "\n"; print "RR(", 2 * $r, ") v. ", 'p' x $cntp, ": ", 2 * $r - $p, "\n"; print "RRooo(",3*$o + 2* $r, ") v. ", 'p' x $cntp, ": ",3*$o + 2 *$r - $p, "\n" }'
+   51  perl -e '$r=7; $o=1; $p=5; while(++$cntp <= 5){ print "\nR(", $r, ") v. ", 'p' x $cntp, ": ",$r - $p * $cntp, " --- ", $p * $cntp, "\n"; print "Rooo(",3*$o+ $r, ") v. ", 'p' x $cntp, ": ",3*$o + $r - $p, "\n"; print "RR(", 2 * $r, ") v. ", 'p' x $cntp, ": ", 2 * $r - $p, "\n"; print "RRooo(",3*$o + 2* $r, ") v. ", 'p' x $cntp, ": ",3*$o + 2 *$r - $p, "\n" }'
+   52  perl -e '$r=7; $o=1; $p=5; while(++$cntp <= 5){ print "\nR(", $r, ") v. ", 'p' x $cntp, ": ",$r - $p * $cntp, " --- ", $p * $cntp, "\n"; print "Rooo(",3*$o+ $r, ") v. ", 'p' x $cntp, ": ",3*$o + $r - $p * $cntp, "\n"; print "RR(", 2 * $r, ") v. ", 'p' x $cntp, ": ", 2 * $r - $p * $cntp, "\n"; print "RRooo(",3*$o + 2* $r, ") v. ", 'p' x $cntp, ": ",3*$o + 2 *$r - $p * $cntp, "\n" }'
+   53  perl -e '$r=8; $o=1; $p=5; while(++$cntp <= 5){ print "\nR(", $r, ") v. ", 'p' x $cntp, "(",$p * $cntp ."): ",$r - $p * $cntp, "\n"; print "Rooo(",3*$o+ $r, ") v. ", 'p' x $cntp,"(",$p * $cntp, "): ",3*$o + $r - $p * $cntp, "\n"; print "RR(", 2 * $r, ") v. ", 'p' x $cntp, ": ", 2 * $r - $p * $cntp, "\n"; print "RRooo(",3*$o + 2* $r, ") v. ", 'p' x $cntp, ": ",3*$o + 2 *$r - $p * $cntp, "\n" }'
+   54  perl -e '$r=5; $o=1; $p=4; while(++$cntp <= 5){ print "\nR(", $r, ") v. ", 'p' x $cntp, "(",$p * $cntp ."): ",$r - $p * $cntp, "\n"; print "Rooo(",3*$o+ $r, ") v. ", 'p' x $cntp,"(",$p * $cntp, "): ",3*$o + $r - $p * $cntp, "\n"; print "RR(", 2 * $r, ") v. ", 'p' x $cntp, ": ", 2 * $r - $p * $cntp, "\n"; print "RRooo(",3*$o + 2* $r, ") v. ", 'p' x $cntp, ": ",3*$o + 2 *$r - $p * $cntp, "\n" }'
+   55  perl -e '$r=6; $o=1; $p=4; while(++$cntp <= 5){ print "\nR(", $r, ") v. ", 'p' x $cntp, "(",$p * $cntp ."): ",$r - $p * $cntp, "\n"; print "Rooo(",3*$o+ $r, ") v. ", 'p' x $cntp,"(",$p * $cntp, "): ",3*$o + $r - $p * $cntp, "\n"; print "RR(", 2 * $r, ") v. ", 'p' x $cntp, ": ", 2 * $r - $p * $cntp, "\n"; print "RRooo(",3*$o + 2* $r, ") v. ", 'p' x $cntp, ": ",3*$o + 2 *$r - $p * $cntp, "\n" }'
+   56  perl -e '$r=6; $o=1; $p=5; while(++$cntp <= 5){ print "\nR(", $r, ") v. ", 'p' x $cntp, "(",$p * $cntp ."): ",$r - $p * $cntp, "\n"; print "Rooo(",3*$o+ $r, ") v. ", 'p' x $cntp,"(",$p * $cntp, "): ",3*$o + $r - $p * $cntp, "\n"; print "RR(", 2 * $r, ") v. ", 'p' x $cntp, ": ", 2 * $r - $p * $cntp, "\n"; print "RRooo(",3*$o + 2* $r, ") v. ", 'p' x $cntp, ": ",3*$o + 2 *$r - $p * $cntp, "\n" }'
+   57  perl -e '$r=7.5; $o=1; $p=5; while(++$cntp <= 5){ print "\nR(", $r, ") v. ", 'p' x $cntp, "(",$p * $cntp ."): ",$r - $p * $cntp, "\n"; print "Rooo(",3*$o+ $r, ") v. ", 'p' x $cntp,"(",$p * $cntp, "): ",3*$o + $r - $p * $cntp, "\n"; print "RR(", 2 * $r, ") v. ", 'p' x $cntp, ": ", 2 * $r - $p * $cntp, "\n"; print "RRooo(",3*$o + 2* $r, ") v. ", 'p' x $cntp, ": ",3*$o + 2 *$r - $p * $cntp, "\n" }'
+   58  perl -e '$r=7; $o=1; $p=5; while(++$cntp <= 5){ print "\nR(", $r, ") v. ", 'p' x $cntp, "(",$p * $cntp ."): ",$r /($p * $cntp), "\n"; print "Rooo(",3*$o+ $r, ") v. ", 'p' x $cntp,"(",$p * $cntp, "): ",3*$o + $r /($p * $cntp), "\n"; print "RR(", 2 * $r, ") v. ", 'p' x $cntp, ": ", 2 * $r /($p * $cntp), "\n"; print "RRooo(",3*$o + 2* $r, ") v. ", 'p' x $cntp, ": ",3*$o + 2 *$r -/($p * $cntp), "\n" }'
+   59  perl -e '$r=7; $o=1; $p=5; while(++$cntp <= 5){ print "\nR(", $r, ") v. ", 'p' x $cntp, "(",$p * $cntp ."): ",$r /($p * $cntp), "\n"; print "Rooo(",3*$o+ $r, ") v. ", 'p' x $cntp,"(",$p * $cntp, "): ",3*$o + $r /($p * $cntp), "\n"; print "RR(", 2 * $r, ") v. ", 'p' x $cntp, ": ", 2 * $r /($p * $cntp), "\n"; print "RRooo(",3*$o + 2* $r, ") v. ", 'p' x $cntp, ": ",3*$o + 2 *$r /($p * $cntp), "\n" }'
+   60  perl -e '$r=7; $o=1; $p=5; while(++$cntp <= 5){ print "\nR(", $r, ") v. ", 'p' x $cntp, "(",$p * $cntp ."): ",$r /($p * $cntp), "\n"; print "Rooo(",3*$o+ $r, ") v. ", 'p' x $cntp,"(",$p * $cntp, "): ",(3*$o + $r)/($p * $cntp), "\n"; print "RR(", 2 * $r, ") v. ", 'p' x $cntp, ": ", 2 * $r /($p * $cntp), "\n"; print "RRooo(",3*$o + 2* $r, ") v. ", 'p' x $cntp, ": ",(3*$o + 2 *$r)/($p * $cntp), "\n" }'
+   61  exit
+   62  ls -l 
+   63  history | less
+   64  sudo apt-get install drush
+   65  history | less
+   66  wc -l dpkg_20140725_1018.out
+   67  dpkg -l > dpkg_20140725_1018.out
+   68  ls -l 
+   69  diff dpkg_20140724_2339.out  dpkg_20140725_1018.out | wc -l
+   70  diff dpkg_20140724_2339.out  dpkg_20140725_1018.out
+   71  which drush
+   72  drush
+   73  which vim
+   74  which gvim
+   75  sudo apt-get install gvim
+   76  sudo apt-get install vim
+   77  which gvim
+   78  drush
+   79  drush dl migrate
+   80  drush en -y migrate
+   81  drush en migrate
+   82  sudo drush en migrate
+   83  ls
+   84  cd /var/www/html
+   85  ls
+   86  cd sites/all/modules/
+   87  drush dl migrate
+   88  drush en -y migrate
+   89  sudo drush dl migrate
+   90  drush en -y migrate
+   91  drush en -y migrate_ui
+   92  ls -la
+   93  ls -l
+   94  ls -la
+   95  ls -l /home/steve/Downloads/firefox/ | less
+   96  ln -s /home/steve/Downloads/firefox/firefox .
+   97  ls -la
+   98  ls -l menu://applications/
+   99  cd /var/www/html/sites/all/modules/
+  100  drush dl views
+  101  sudo drush dl views
+  102  drush en -y views
+  103  sudo drush en -y views
+  104  sudo drush dl 
+  105  sudo drush dl rules
+  106  sudo drush en -y rules
+  107  sudo drush dl advanced_help
+  108  sudo drush en -y advanced_help
+  109  sudo drush dl panels
+  110  sudo drush en -y panels
+  111  sudo drush dl jquery_ui
+  112  sudo drush en -y jquery_ui
+  113  perl -e '$r=9; $o=2; $p=6; while(++$cntp <= 5){ print "\nR(", $r, ") v. ", 'p' x $cntp, "(",$p * $cntp ."): ",$r /($p * $cntp), "\n"; print "Rooo(",3*$o+ $r, ") v. ", 'p' x $cntp,"(",$p * $cntp, "): ",(3*$o + $r)/($p * $cntp), "\n"; print "RR(", 2 * $r, ") v. ", 'p' x $cntp, ": ", 2 * $r /($p * $cntp), "\n"; print "RRooo(",3*$o + 2* $r, ") v. ", 'p' x $cntp, ": ",(3*$o + 2 *$r)/($p * $cntp), "\n" }'
+  114  perl -e '$r=9; $o=2; $p=6; while(++$cntp <= 5){ print "R(", $r, ") v. ", 'p' x $cntp, ": ",$r - $p * $cntp, " ", $p * $cntp, "\n"; print "Rooo(",3*$o+ $r, ") v. ", 'p' x $cntp, ": ",3*$o + $r - $p, "\n"; print "RR(", 2 * $r, ") v. ", 'p' x $cntp, ": ", 2 * $r - $p, "\n"; print "RRooo(",3*$o + 2* $r, ") v. ", 'p' x $cntp, ": ",3*$o + 2 *$r - $p, "\n" }'
+  115  perl -e '$r=9; $o=2; $p=6; while(++$cntp <= 5){ print "\nR(", $r, ") v. ", 'p' x $cntp, "(",$p * $cntp ."): ",$r - $p * $cntp, "\n"; print "Rooo(",3*$o+ $r, ") v. ", 'p' x $cntp,"(",$p * $cntp, "): ",3*$o + $r - $p * $cntp, "\n"; print "RR(", 2 * $r, ") v. ", 'p' x $cntp, ": ", 2 * $r - $p * $cntp, "\n"; print "RRooo(",3*$o + 2* $r, ") v. ", 'p' x $cntp, ": ",3*$o + 2 *$r - $p * $cntp, "\n" }'
+  116  perl -e 'my $rv=7; my $ov=1; my $pv=5; @a=( "RRooo:p", "RRoo:p", "RRo:p", "RRooo:pp", "RRoo:pp", "RRo:pp", "RR:p", "Rooo:p", "R:p", "Roo:pp", "RR:ppp", "RRooo:pppp", , "RRooo:ppppp", "o:ppppp"); $cnt=0; while($cnt < $#a){ my $i=$a[$cnt]; my ($r) = ($i =~ m/R+/); my ($o) = ($i =~ m/o+/); my ($p) = ($i =~ m/p+/); printf "for %s -- R:%s(%4.2f) o:%s(%4.2f) tot(%4.2f) vs. p:%s(%4.2f) = %4.2f (Ro/p:%7.3f -- p/Ro:%7.3f)\n", $i, $r, length($r)*$rv, $o, length($o)*$ov, length($r)*$rv + length($o)*$ov, $p, length($p)*$pv, (length($r)*$rv + length($o)*$ov) / length($p)*$pv, length($p)*$pv / (length($r)*$rv + length($o)*$ov) }'
+  117  perl -e 'my $rv=7; my $ov=1; my $pv=5; @a=( "RRooo:p", "RRoo:p", "RRo:p", "RRooo:pp", "RRoo:pp", "RRo:pp", "RR:p", "Rooo:p", "R:p", "Roo:pp", "RR:ppp", "RRooo:pppp", , "RRooo:ppppp", "o:ppppp"); $cnt=0; while($cnt < $#a){ my $i=$a[$cnt]; my ($r) = ($i =~ m/R+/); my ($o) = ($i =~ m/o+/); my ($p) = ($i =~ m/p+/); printf "for %s -- R:%s(%4.2f) o:%s(%4.2f) tot(%4.2f) vs. p:%s(%4.2f) = %4.2f (Ro/p:%7.3f -- p/Ro:%7.3f)\n", $i, $r, length($r)*$rv, $o, length($o)*$ov, length($r)*$rv + length($o)*$ov, $p, length($p)*$pv, (length($r)*$rv + length($o)*$ov) / length($p)*$pv, length($p)*$pv / (length($r)*$rv + length($o)*$ov); $cnt++ }'
+  118  perl -e '$a="RRoo:ppp"; print length($a);'
+  119  perl -e '$a="RRoo:ppp"; my ($r)=($a =~ m/R+/); print $a, " ", length($a), "; ", $r, " ", length($r), "\n";'
+  120  perl -e '$a="RRoo:ppp"; my ($r)= $a =~ m/R+/; print $a, " ", length($a), "; ", $r, " ", length($r), "\n";'
+  121  perl -e '$a="RRoo:ppp"; my ($r)= $a =~ s/^R//; print $a, " ", length($a), "; ", $r, " ", length($r), "\n";'
+  122  perl -e '$a="RRoo:ppp"; my ($r)= $a =~ s/^R+//; print $a, " ", length($a), "; ", $r, " ", length($r), "\n";'
+  123  perl -e '$a="RRoo:ppp"; my ($r)= $a =~ m/\(R+\)/; print $a, " ", length($a), "; ", $r, " ", length($r), "\n";'
+  124  perl -e '$a="RRoo:ppp"; my ($r)= ($a =~ m/\(R+\)/); print $a, " ", length($a), "; ", $r, " ", length($r), "\n";'
+  125  perl -e '$a="RRoo:ppp"; ($r)= ($a =~ m/\(R+\)/); print $a, " ", length($a), "; ", $r, " ", length($r), "\n";'
+  126  perl -e '$a="RRoo:ppp"; ($r)= ($a =~ m/\\\(R+\\\)/); print $a, " ", length($a), "; ", $r, " ", length($r), "\n";'
+  127  perl -e '$a="RRoo:ppp"; ($r)= $a =~ m/\\\(R+\\\)/; print $a, " ", length($a), "; ", $r, " ", length($r), "\n";'
+  128  perl -e '$a="RRoo:ppp"; ($r)= ($a =~ m/(R+)/); print $a, " ", length($a), "; ", $r, " ", length($r), "\n";'
+  129  perl -e 'my $rv=7; my $ov=1; my $pv=5; @a=( "RRooo:p", "RRoo:p", "RRo:p", "RRooo:pp", "RRoo:pp", "RRo:pp", "RR:p", "Rooo:p", "R:p", "Roo:pp", "RR:ppp", "RRooo:pppp", , "RRooo:ppppp", "o:ppppp"); $cnt=0; while($cnt < $#a){ my $i=$a[$cnt]; my ($r) = ($i =~ m/(R+)/); my ($o) = ($i =~ m/(o+)/); my ($p) = ($i =~ m/(p+)/); printf "for %s -- R:%s(%4.2f) o:%s(%4.2f) tot(%4.2f) vs. p:%s(%4.2f) = %4.2f (Ro/p:%7.3f -- p/Ro:%7.3f)\n", $i, $r, length($r)*$rv, $o, length($o)*$ov, length($r)*$rv + length($o)*$ov, $p, length($p)*$pv, (length($r)*$rv + length($o)*$ov) / length($p)*$pv, length($p)*$pv / (length($r)*$rv + length($o)*$ov); $cnt++ }'
+  130  perl -e 'my $rv=7; my $ov=1; my $pv=5; @a=( "RRooo:p", "RRoo:p", "RRo:p", "RRooo:pp", "RRoo:pp", "RRo:pp", "RR:p", "Rooo:p", "R:p", "Roo:pp", "RR:ppp", "RRooo:pppp", , "RRooo:ppppp", "oo:pppp", "ooo:ppppp", "oo:ppppp", "o:ppppp"); $cnt=0; while($cnt < $#a){ my $i=$a[$cnt]; my ($r) = ($i =~ m/(R+)/); my ($o) = ($i =~ m/(o+)/); my ($p) = ($i =~ m/(p+)/); printf "for %s -- R:%s(%4.2f) + o:%s(%4.2f) = tot(%4.2f) vs. p:%s(%4.2f) = %4.2f (Ro/p:%7.3f ::: p/Ro:%7.3f)\n", $i, $r, length($r)*$rv, $o, length($o)*$ov, length($r)*$rv + length($o)*$ov, $p, length($p)*$pv, (length($r)*$rv + length($o)*$ov) / (length($p)*$pv), (length($p)*$pv) / (length($r)*$rv + length($o)*$ov); $cnt++ }'
+  131  perl -e 'my $rv=7; my $ov=1; my $pv=5; @a=( "RRooo:p", "RRoo:p", "RRo:p", "RRooo:pp", "RRoo:pp", "RRo:pp", "RR:p", "Rooo:p", "R:p", "Roo:pp", "RR:ppp", "RRooo:pppp", , "RRooo:ppppp", "oo:pppp", "ooo:ppppp", "oo:ppppp", "o:ppppp"); $cnt=0; while($cnt < $#a){ my $i=$a[$cnt]; my ($r) = ($i =~ m/(R+)/); my ($o) = ($i =~ m/(o+)/); my ($p) = ($i =~ m/(p+)/); printf "for %10s -- R:%3s(%4.2f) + o:%5s(%4.2f) = tot(%4.2f) vs. p:%6s(%4.2f) = %4.2f (Ro/p:%7.3f ::: p/Ro:%7.3f)\n", $i, $r, length($r)*$rv, $o, length($o)*$ov, length($r)*$rv + length($o)*$ov, $p, length($p)*$pv, length($r)*$rv + length($o)*$ov - length($p)*$pv, (length($r)*$rv + length($o)*$ov) / (length($p)*$pv), (length($p)*$pv) / (length($r)*$rv + length($o)*$ov); $cnt++ }'
+  132  perl -e 'my $rv=7; my $ov=1; my $pv=5; @a=( "RRooo:p", "RRoo:p", "RRo:p", "RRooo:pp", "RRoo:pp", "RRo:pp", "RR:p", "Rooo:p", "R:p", "Roo:pp", "RR:ppp", "RRooo:pppp", , "RRooo:ppppp", "oo:pppp", "ooo:ppppp", "oo:ppppp", "o:ppppp"); $cnt=0; while($cnt < $#a){ my $i=$a[$cnt]; my ($r) = ($i =~ m/(R+)/); my ($o) = ($i =~ m/(o+)/); my ($p) = ($i =~ m/(p+)/); printf "for %12s -- R:%3s(%4.2f) + o:%5s(%4.2f) = tot(%4.2f) vs. p:%6s(%4.2f) = %4.2f (Ro/p:%7.3f ::: p/Ro:%7.3f)\n", $i, $r, length($r)*$rv, $o, length($o)*$ov, length($r)*$rv + length($o)*$ov, $p, length($p)*$pv, length($r)*$rv + length($o)*$ov - length($p)*$pv, (length($r)*$rv + length($o)*$ov) / (length($p)*$pv), (length($p)*$pv) / (length($r)*$rv + length($o)*$ov); $cnt++ }'
+  133  perl -e 'my $rv=7; my $ov=1; my $pv=5; @a=( "RRooo:p", "RRoo:p", "RRo:p", "RRooo:pp", "RRoo:pp", "RRo:pp", "RR:p", "Rooo:p", "R:p", "Roo:pp", "RR:ppp", "RRooo:pppp", , "RRooo:ppppp", "oo:pppp", "ooo:ppppp", "oo:ppppp", "o:ppppp"); $cnt=0; while($cnt < $#a){ my $i=$a[$cnt]; my ($r) = ($i =~ m/(R+)/); my ($o) = ($i =~ m/(o+)/); my ($p) = ($i =~ m/(p+)/); printf "for %12s -- R:%3s(%5.2f) + o:%5s(%4.2f) = tot(%5.2f) vs. p:%6s(%6.2f) = %4.2f (Ro/p:%7.3f ::: p/Ro:%7.3f)\n", $i, $r, length($r)*$rv, $o, length($o)*$ov, length($r)*$rv + length($o)*$ov, $p, length($p)*$pv, length($r)*$rv + length($o)*$ov - length($p)*$pv, (length($r)*$rv + length($o)*$ov) / (length($p)*$pv), (length($p)*$pv) / (length($r)*$rv + length($o)*$ov); $cnt++ }'
+  134  perl -e 'my $rv=7; my $ov=1; my $pv=5; @a=( "RRooo:p", "RRoo:p", "RRo:p", "RRooo:pp", "RRoo:pp", "RRo:pp", "RR:p", "Rooo:p", "R:p", "Roo:pp", "RR:ppp", "RRooo:pppp", , "RRooo:ppppp", "oo:pppp", "ooo:ppppp", "oo:ppppp", "o:ppppp"); $cnt=0; while($cnt < $#a){ my $i=$a[$cnt]; my ($r) = ($i =~ m/(R+)/); my ($o) = ($i =~ m/(o+)/); my ($p) = ($i =~ m/(p+)/); printf "for %12s -- R:%3s(%5.2f) + o:%5s(%4.2f) = tot(%5.2f) vs. p:%6s(%6.2f) = %6.2f (Ro/p:%7.3f ::: p/Ro:%7.3f)\n", $i, $r, length($r)*$rv, $o, length($o)*$ov, length($r)*$rv + length($o)*$ov, $p, length($p)*$pv, length($r)*$rv + length($o)*$ov - length($p)*$pv, (length($r)*$rv + length($o)*$ov) / (length($p)*$pv), (length($p)*$pv) / (length($r)*$rv + length($o)*$ov); $cnt++ }'
+  135  perl -e 'my $rv=9; my $ov=2; my $pv=6; @a=( "RRooo:p", "RRoo:p", "RRo:p", "RRooo:pp", "RRoo:pp", "RRo:pp", "RR:p", "Rooo:p", "R:p", "Roo:pp", "RR:ppp", "RRooo:pppp", , "RRooo:ppppp", "oo:pppp", "ooo:ppppp", "oo:ppppp", "o:ppppp"); $cnt=0; while($cnt < $#a){ my $i=$a[$cnt]; my ($r) = ($i =~ m/(R+)/); my ($o) = ($i =~ m/(o+)/); my ($p) = ($i =~ m/(p+)/); printf " %12s - %3s(%5.2f)+ %5s(%4.2f)=(%5.2f) vs. %6s(%6.2f)=%6.2f (Ro/p:%7.3f : p/Ro:%7.3f)\n", $i, $r, length($r)*$rv, $o, length($o)*$ov, length($r)*$rv + length($o)*$ov, $p, length($p)*$pv, length($r)*$rv + length($o)*$ov - length($p)*$pv, (length($r)*$rv + length($o)*$ov) / (length($p)*$pv), (length($p)*$pv) / (length($r)*$rv + length($o)*$ov); $cnt++ }'
+  136  perl -e 'my $rv=3; my $ov=2/3; my $pv=2; @a=( "RRooo:p", "RRoo:p", "RRo:p", "RRooo:pp", "RRoo:pp", "RRo:pp", "RR:p", "Rooo:p", "R:p", "Roo:pp", "RR:ppp", "RRooo:pppp", , "RRooo:ppppp", "oo:pppp", "ooo:ppppp", "oo:ppppp", "o:ppppp"); $cnt=0; while($cnt < $#a){ my $i=$a[$cnt]; my ($r) = ($i =~ m/(R+)/); my ($o) = ($i =~ m/(o+)/); my ($p) = ($i =~ m/(p+)/); printf " %12s - %3s(%5.2f)+ %5s(%4.2f)=(%5.2f) vs. %6s(%6.2f)=%6.2f (Ro/p:%7.3f : p/Ro:%7.3f)\n", $i, $r, length($r)*$rv, $o, length($o)*$ov, length($r)*$rv + length($o)*$ov, $p, length($p)*$pv, length($r)*$rv + length($o)*$ov - length($p)*$pv, (length($r)*$rv + length($o)*$ov) / (length($p)*$pv), (length($p)*$pv) / (length($r)*$rv + length($o)*$ov); $cnt++ }'
+  137  perl -e 'my $rv=3; my $ov=1/2; my $pv=2; @a=( "RRooo:p", "RRoo:p", "RRo:p", "RRooo:pp", "RRoo:pp", "RRo:pp", "RR:p", "Rooo:p", "R:p", "Roo:pp", "RR:ppp", "RRooo:pppp", , "RRooo:ppppp", "oo:pppp", "ooo:ppppp", "oo:ppppp", "o:ppppp"); $cnt=0; while($cnt < $#a){ my $i=$a[$cnt]; my ($r) = ($i =~ m/(R+)/); my ($o) = ($i =~ m/(o+)/); my ($p) = ($i =~ m/(p+)/); printf " %12s - %3s(%5.2f)+ %5s(%4.2f)=(%5.2f) vs. %6s(%6.2f)=%6.2f (Ro/p:%7.3f : p/Ro:%7.3f)\n", $i, $r, length($r)*$rv, $o, length($o)*$ov, length($r)*$rv + length($o)*$ov, $p, length($p)*$pv, length($r)*$rv + length($o)*$ov - length($p)*$pv, (length($r)*$rv + length($o)*$ov) / (length($p)*$pv), (length($p)*$pv) / (length($r)*$rv + length($o)*$ov); $cnt++ }'
+  138  perl -e 'my $rv=5; my $ov=1; my $pv=3; @a=( "RRooo:p", "RRoo:p", "RRo:p", "RRooo:pp", "RRoo:pp", "RRo:pp", "RR:p", "Rooo:p", "R:p", "Roo:pp", "RR:ppp", "RRooo:pppp", , "RRooo:ppppp", "oo:pppp", "ooo:ppppp", "oo:ppppp", "o:ppppp"); $cnt=0; while($cnt < $#a){ my $i=$a[$cnt]; my ($r) = ($i =~ m/(R+)/); my ($o) = ($i =~ m/(o+)/); my ($p) = ($i =~ m/(p+)/); printf " %12s - %3s(%5.2f)+ %5s(%4.2f)=(%5.2f) vs. %6s(%6.2f)=%6.2f (Ro/p:%7.3f : p/Ro:%7.3f)\n", $i, $r, length($r)*$rv, $o, length($o)*$ov, length($r)*$rv + length($o)*$ov, $p, length($p)*$pv, length($r)*$rv + length($o)*$ov - length($p)*$pv, (length($r)*$rv + length($o)*$ov) / (length($p)*$pv), (length($p)*$pv) / (length($r)*$rv + length($o)*$ov); $cnt++ }'
+  139  perl -e 'my $rv=5; my $ov=1; my $pv=3; @a=( "RRooo:p", "RRoo:p", "RRo:p", "RRooo:pp", "RRoo:pp", "RRo:pp", "RR:p", "Rooo:p", "R:p", "Roo:pp", "RR:ppp", "RRooo:pppp", "oooo:p", "RRooo:ppppp", "oo:pppp", "ooo:ppppp", "oo:ppppp", "o:ppppp"); $cnt=0; while($cnt < $#a){ my $i=$a[$cnt]; my ($r) = ($i =~ m/(R+)/); my ($o) = ($i =~ m/(o+)/); my ($p) = ($i =~ m/(p+)/); printf " %12s - %3s(%5.2f)+ %5s(%4.2f)=(%5.2f) vs. %6s(%6.2f)=%6.2f (Ro/p:%7.3f : p/Ro:%7.3f)\n", $i, $r, length($r)*$rv, $o, length($o)*$ov, length($r)*$rv + length($o)*$ov, $p, length($p)*$pv, length($r)*$rv + length($o)*$ov - length($p)*$pv, (length($r)*$rv + length($o)*$ov) / (length($p)*$pv), (length($p)*$pv) / (length($r)*$rv + length($o)*$ov); $cnt++ }'
+  140  perl -e 'my $rv=5; my $ov=1; my $pv=3; @a=( "RRooo:p", "RRoo:p", "RRo:p", "RRooo:pp", "RRoo:pp", "RRo:pp", "RR:p", "Rooo:p", "R:p", "Roo:pp", "RR:ppp", "RRooo:pppp", "oooo:p", "RRooo:ppppp", "oooo:pp", "oo:pppp", "ooo:ppppp", "oo:ppppp", "o:ppppp"); $cnt=0; while($cnt < $#a){ my $i=$a[$cnt]; my ($r) = ($i =~ m/(R+)/); my ($o) = ($i =~ m/(o+)/); my ($p) = ($i =~ m/(p+)/); printf " %12s - %3s(%5.2f)+ %5s(%4.2f)=(%5.2f) vs. %6s(%6.2f)=%6.2f (Ro/p:%7.3f : p/Ro:%7.3f)\n", $i, $r, length($r)*$rv, $o, length($o)*$ov, length($r)*$rv + length($o)*$ov, $p, length($p)*$pv, length($r)*$rv + length($o)*$ov - length($p)*$pv, (length($r)*$rv + length($o)*$ov) / (length($p)*$pv), (length($p)*$pv) / (length($r)*$rv + length($o)*$ov); $cnt++ }'
+  141  exit
+  142  sudo apt-get install python-setuptools
+  143  sudo easy_install pip && sudo pip install dotcloud
+  144  mkdir first
+  145  cd first/ 
+  146  git clone git://github.com/dotcloud/stack-perl-mysql.git .
+  147  sudo apt-get install git
+  148  git clone git://github.com/dotcloud/stack-perl-mysql.git .
+  149  dotcloud connect first
+  150  dotcloud setup
+  151  dotcloud connect first
+  152  dotcloud setup
+  153  dotcloud check
+  154  echo "no ssh key"
+  155  exit
+  156  ls -l /usr
+  157  ls -laR /usr | less
+  158  sudo apt-get nethack
+  159  sudo apt-get install nethack
+  160  sudo apt-get install nethack-console
+  161  /usr/lib/games/nethack/nethack-console.sh
+  162  ls -la
+  163  exit
+  164  echo "no ssh key"
+  165  ls -la
+  166  mkdir jtfirst
+  167  cd jtfirst
+  168  git clone git://github.com/dotcloud/stack-perl-mysql.git .
+  169  dotcloud connect jtfirst
+  170  dotcloud push
+  171  ls -la
+  172  cat dotcloud.yml  
+  173  perl -ple '' dotcloud.yml
+  174  perl -ple '' README.md  
+  175  ls -la
+  176  ls -la app
+  177  perl -ple '' app/app.pl  
+  178  vi app/app.pl
+  179  dotcloud push
+  180  tail app/app.pl; echo
+  181  perl -v
+  182  dotcloud open
+  183  ls -l ../Pictures/ 
+  184  ls -l ../Pictures/*_files
+  185  exit
+  186  which vim
+  187  vim /home/steve/Downloads/Quad-Fold-Game-Board_mod1.svg  
+  188  sudo apt-get inkscape
+  189  sudo apt-get install inkscape
+  190  df -k
+  191  df -H
+  192  sudo apt-get install adobe-flashplugin
+  193  sudo apt-get install adobe-flash
+  194  sudo apt-get install flash
+  195  sudo apt-get install flashplugin
+  196  sudo apt-get install flashplugin-installer
+  197  which flashplugin-installer
+  198  which flashplugin
+  199  which flash
+  200  locate flash
+  201  perl -e '$cf= 4 * atan2(1,1)/180; while ($cnt < 31) { printf "%2d %d %7.4f %7.4f %7.2f %7.2f %7.1f %7.1f\n", $cnt, $cnt * 12, cos($cf * $cnt * 12), sin($cf * $cnt*12), cos($cf * $cnt * 12)* 500, sin($cf * $cnt*12)* 500, cos($cf * $cnt * 12)*2600, sin($cf * $cnt*12)*2600; $cnt++}'
+  202  ps -ef | grep vim
+  203  ls -l /
+  204  ls -l /dev
+  205  ls -l
+  206  cd Downloads/ 
+  207  ls -l
+  208  vi IceBreaker_quadfold_001.svg
+  209  cp IceBreaker_quadfold_001.svg IceBreaker_quadfold_002.svg
+  210  vi IceBreaker_quadfold_002.svg
+  211  cp IceBreaker_quadfold_002.svg IceBreaker_quadfold_003.svg
+  212  vi IceBreaker_quadfold_003.svg
+  213  exit
+  214  cd Downloads/ 
+  215  ls -l
+  216  cat I*
+  217  vi IceBreaker_quadfold_003.svg  
+  218  cp IceBreaker_quadfold_003.svg IceBreaker_quadfold_004.svg
+  219  vi IceBreaker_quadfold_004.svg  
+  220  cp IceBreaker_quadfold_004.svg IceBreaker_quadfold_005.svg
+  221  vi IceBreaker_quadfold_005.svg
+  222  ls -l
+  223  vi IceBreaker_quadfold_005.svg Quad-Fold-Game-Board_mod1.svg  
+  224  cp IceBreaker_quadfold_005.svg IceBreaker_quadfold_006.svg
+  225  vi IceBreaker_quadfold_006.svg
+  226  cat IceBreaker_quadfold_006.svg
+  227  perl -e '$cf= 4 * atan2(1,1)/180; while ($cnt < 31) { printf "  <line x1=\"%dpx\" y1=\"%dpx\" x2=\"%dpx\" y2=\"%dpx\" stroke=\"yellow\" stroke-width=\"6px\" />\n", 354+cos($cf * $cnt * 12)* 4971, 354+sin($cf * $cnt*12)* 4971, 2200+cos($cf * $cnt * 12)*925, 2200+sin($cf * $cnt*12)*925; $cnt++}'
+  228  perl -e '$cf= 4 * atan2(1,1)/180; while ($cnt < 31) { printf "  <line x1=\"%dpx\" y1=\"%dpx\" x2=\"%dpx\" y2=\"%dpx\" stroke=\"yellow\" stroke-width=\"6px\" />\n", 354+cos($cf * $cnt * 12)* 2500, 354+sin($cf * $cnt*12)* 2500, 2200+cos($cf * $cnt * 12)*925, 2200+sin($cf * $cnt*12)*925; $cnt++}'
+  229  perl -e '$cf= 4 * atan2(1,1)/180; while ($cnt < 31) { printf "  <line x1=\"%dpx\" y1=\"%dpx\" x2=\"%dpx\" y2=\"%dpx\" stroke=\"yellow\" stroke-width=\"6px\" />\n", 2625+cos($cf * $cnt * 12)* 2500, 2625+sin($cf * $cnt*12)* 2500, 2625+cos($cf * $cnt * 12)*925, 2625+sin($cf * $cnt*12)*925; $cnt++}'
+  230  vi IceBreaker_quadfold_006.svg
+  231  perl -e '$cf= 4 * atan2(1,1)/180; while ($cnt < 31) { printf "  <line x1=\"%dpx\" y1=\"%dpx\" x2=\"%dpx\" y2=\"%dpx\" stroke=\"yellow\" stroke-width=\"6px\" />\n", 2625+cos($cf * $cnt * 12)* 2500, 2625+sin($cf * $cnt*12)* 2500, 2625+cos($cf * $cnt * 12)*425, 2625+sin($cf * $cnt*12)*425; $cnt++}'
+  232  vi IceBreaker_quadfold_006.svg
+  233  cp IceBreaker_quadfold_006.svg IceBreaker_quadfold_007.svg
+  234  vi IceBreaker_quadfold_007.svg Quad-Fold-Game-Board_mod1.svg  
+  235  ls -la
+  236  cd Downloads/ 
+  237  ls -la
+  238  df -k
+  239  df -H
+  240  cd /etc/laptop-mode
+  241  which laptop
+  242  locate laptop
+  243  cd /usr/src/linux-headers-3.2.0-23 
+  244  ls -la
+  245  cd Documentation/ 
+  246  ls -la
+  247  cd laptops/ 
+  248  ls -la
+  249  cat Makefile  
+  250  cd Downloads/ 
+  251  ls -la
+  252  df -k
+  253  df -H
+  254  df -k
+  255  perl -le 'print 5280 / 7' 
+  256  cd Downloads/ 
+  257  ls -l 
+  258  cp Zetishar12dom001.svg  Zhetyaspal001.svg
+  259  vi Zhetyaspal001.svg
+  260  which vi
+  261  /usr/bin/vi Zhetyaspal001.svg
+  262  man vi
+  263  /usr/bin/vi Zhetyaspal001.svg
+  264  perl -le 'print 300 * 4.125' 
+  265  vi Zhetyaspal001.svg
+  266  perl -le 'print 3075 - 3 * 1235' 
+  267  perl -le 'print 3075 - 2 * 1235' 
+  268  vi Zhetyaspal001.svg
+  269  cp Zhetyaspal001.svg Zhetyaspal002.svg
+  270  vi Zhetyaspal002.svg
+  271  cp Zhetyaspal002.svg Zhetyaspal003.svg
+  272  vi Zhetyaspal003.svg
+  273  cp Zhetyaspal003.svg Zhetyaspal004.svg
+  274  vi Zhetyaspal004.svg
+  275  cp Zhetyaspal004.svg Zhetyaspal005.svg
+  276  vi Zhetyaspal005.svg
+  277  ls -l /media/CENTON\ USB/mm
+  278  cd /media/CENTON\ USB/mm
+  279  cp Initial_rules061.txt  Initial_rules062.txt  
+  280  which vim
+  281  vim  Initial_rules062.txt  
+  282  which gvim
+  283  cp Zhetyaspal005.svg  Zhetyaspal062.svg
+  284  vim Zhetyaspal062.svg Initial_rules062.txt  
+  285  ls -l
+  286  ls -l Pictures/ 
+  287  ls -l jtfirst/ 
+  288  ls -l jtfirst/app/ 
+  289  ls -l first/ 
+  290  ls -l first/app/ 
+  291  ls -l Documents/ 
+  292  ls -l Downloads/ 
+  293  perl -le 'print 790 - 1050'
+  294  perl -le 'print 790 + 1050'
+  295  perl -le 'print 790 + 2 * 1050'
+  296  perl -le 'print 485 - 615'
+  297  perl -le 'print 485 - 1535'
+  298  perl -le 'print 485 + 1535'
+  299  perl -le 'print 485 - 2585'
+  300  perl -le 'print 485 + 2585'
+  301  perl -le 'print 485 - 3635'
+  302  perl -le 'print 485 + 3635'
+  303  df -k
+  304  df -H
+  305  ls -lt /media/CENTON\ USB/mm | less
+  306  ls -lt /media/CENTON\ USB/mm | head
+  307  ls -l /media/88C7-D6BC/mm | less
+  308  ls -lt /media/88C7-D6BC/mm | less
+  309  ls -lt /media/88C7-D6BC/mm | head
+  310  ls -lt /media/88C7-D6BC/mm/Initial_rul*
+  311  ls -lt /media/CENTON\ USB/mm/Initial_rul*
+  312  mv /media/CENTON\ USB/mm/Initial_rules081.txt  /media/CENTON\ USB/mm/Initial_rules080.txt  
+  313  vim /media/88C7-D6BC/mm/Initial_rules081.txt  
+  314  ps -ef |less
+  315  vim /media/88C7-D6BC/mm/Initial_rules081.txt  
+  316  ls -l Downloads/ 
+  317  wc -l Downloads/large-square-mat.svg  
+  318  vim Downloads/large-square-mat.svg
+  319  vim Downloads/Zhetyaspal062.svg  
+  320  vim /media/88C7-D6BC/mm/Initial_rules081.txt  
+  321  perlbrew init
+  322  sudo ls -l /
+  323  sudo apt-get install perlbrew
+  324  sudo apt-get update
+  325  sudo apt-get install perlbrew
+  326  perlbrew init
+  327  perlbrew available
+  328  perlbrew install 5.18.4
+  329  perl -v
+  330  perlbrew switch perl-5.18.4
+  331  exec /bin/bash
+  332  perl -v
+  333  which perl
+  334  perlbrew exec perl -v
+  335  perlbrew exec cpan
+  336  pwd
+  337  ls -la
+  338  vi Desktop/Imager_eg001.pl
+  339  perlbrew exec perl Desktop/Imager_eg001.pl
+  340  perlbrew exec perl Desktop/Imager_eg001.pl Downloads/Zeti_064_10_inch_square.png  
+  341  ls -l Downloads/Zeti_064_10_inch_square.*
+  342  perlbrew exec perl Desktop/Imager_eg001.pl Downloads/Zeti_064_10_inch_square.bmp  
+  343  ls -l Downloads/Zeti_064_10_inch_square.*
+  344  mv Downloads/Zeti_064_10_inch_square.bmp Downloads/Zeti_064_10_inch_sq.bmp
+  345  perlbrew exec perl Desktop/Imager_eg001.pl Downloads/Zeti_064_10_inch_sq.bmp  
+  346  ls -l Downloads/Zeti_064_10_inch_sq*
+  347  perl -v
+  348  which perl
+  349  which cpan
+  350  which perlbrew
+  351  which curl
+  352  history | grep apt-get
+  353  which wget
+  354  wget -O - http://install.perlbrew.pl | bash
+  355  ls -la
+  356  vi ~/.bash_profile
+  357  df -k
+  358  df -H
+  359  cat ~/.bash_profile
+  360  tail -f ~/perl5/perlbrew/build.log
+  361  perlbrew exec perl -v
+  362  perl -v
+  363  cpan
+  364  perl Desktop/Imager_eg001.pl Downloads/Zeti_064_10_inch_sq.bmp  
+  365  perl -c Desktop/Imager_eg001.pl  
+  366  sudo cpan
+  367  df -k
+  368  cd Desktop/BuildTheSkies/PlayerSliverMat/ 
+  369  vi config.json  
+  370  perl gen.pl
+  371  cd
+  372  sudo cpan install Moo
+  373  cd -
+  374  perl -c gen.pl
+  375  cd -
+  376  sudo cpan install cpanminus
+  377  sudo cpan install App::cpanminus
+  378  sudo cpanm Text::Template  Safe   Imager::Font::Wrap   Imager::Font  Config::JSON
+  379  cd -
+  380  perl -c gen.pl
+  381  perl gen.pl
+  382  vi config.json  
+  383  grep FRANC config.json
+  384  ls -l /home/steve/Desktop/BuildTheSkies/Fonts/
+  385  cd -
+  386  apt-get install opentype
+  387  #sudo apt-get install opentype
+  388  sudo apt-get
+  389  history | grep dpkg
+  390  dpkg -l > dpkg_20160417_1441.out
+  391  dpkg -l | grep -i opentype
+  392  vi dpkg_20160417_1441.out  
+  393  sudo apt-get install freetype2-devel
+  394  sudo apt-get install freetype-devel
+  395  dpkg -l | grep -i freetype
+  396  ls -l /usr/share/fonts/truetype/
+  397  ls -l /usr/share/fonts/truetype/freefont/ 
+  398  ls -l /usr/share/fonts/truetype/ubuntu-font-family/ | less
+  399  ls -l /usr/share/fonts/truetype/liberation/ | less
+  400  cd -
+  401  grep FRANC config.json
+  402  vi config.json
+  403  ls -l /usr/share/fonts/truetype/freefont/FreeMono.ttf
+  404  vi config.json
+  405  perl gen.pl
+  406  vi config.json
+  407  cd ..
+  408  perl fonttest.pl  
+  409  cat fonttest.pl
+  410  vi fonttest.pl
+  411  perl fonttest.pl  
+  412  cp fonttest.pl fonttest_notJT.pl
+  413  vi fonttest_notJT.pl
+  414  perl fonttest_notJT.pl
+  415  perl fonttest_notJT.pl
+  416  cd -
+  417  sudo cpanm --verbose --force Imager
+  418  cd ~
+  419  sudo apt-get freetype2
+  420  sudo apt-get install freetype2
+  421  sudo apt-get install freetype
+  422  sudo apt-get install libfreetype2
+  423  grep -i freetyp dpkg_20160417_1441.out  
+  424  sudo apt-get install libfreetype6
+  425  sudo cpanm --verbose --force Imager
+  426  cd -
+  427  cd PlayerSliverMat/ 
+  428  perl gen.pl
+  429  vi config.json 
+  430  perl gen.pl
+  431  cd -
+  432  cd ~
+  433  sudo cpanm install Imager::File::PNG
+  434  cd -
+  435  perl gen.pl
+  436  vi config.json  
+  437  vi config.json 
+  438  perl gen.pl
+  439  vi config.json 
+  440  perl gen.pl
+  441  ls -l out
+  442  open out
+  443  open out/Tethys\[face\].png  
+  444  vi config.json 
+  445  perl gen.pl
+  446  vi config.json 
+  447  ls -l 
+  448  vi config.json 
+  449  cd ../NEACards/ 
+  450  vi config.json 
+  451  locate freetype.h
+  452  cd Downloads/ 
+  453  tar -xvfz freetype-2.6.3.tar.gz  
+  454  tar xvfz freetype-2.6.3.tar.gz  
+  455  cd freetype-2.6.3/ 
+  456  ./configure
+  457  make
+  458  make test
+  459  make install
+  460  sudo make install
+  461  locate freetype.h
+  462  find /usr/local/include -name freetype.h
+  463  history | tail -20
+  464  cd ..
+  465  tar xvfz libpng-1.6.21.tar.gz  
+  466  cd png
+  467  cd libpng-1.6.21/ 
+  468  ./configure
+  469  make
+  470  make test
+  471  make install
+  472  sudo make install
+  473  open out/Tethys\[face\].png  
+  474  cd Desktop/BuildTheSkies/ 
+  475  history | grep git | wc -l
+  476  history | grep git
+  477  git clone https://github.com/BuildTheSkies/econo-2016-05-contest.git
+  478  cd econo-2016-05-contest/ 
+  479  ls -la
+  480  wc -l README.md  
+  481  cat README.md
+  482  history > compon_stdio_hist.txt

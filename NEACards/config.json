@@ -1,0 +1,110 @@
+# config-file-type: JSON 1
+{
+	"width" : "450",
+	"height" : "600",
+    "folder_id" : "",
+    "game_id" : "",
+    "out" : "out",
+	"back" : [
+		{
+            "name" : "Background",
+            "disabled" : 1,
+			"module" : "AddImage",
+            "params" : {
+                "x" : 0,
+                "y" : 0,
+                "path" : "NEACard_bkgd.png",
+            },
+		},
+		{
+            "name" : "Template",
+            "disabled" : 0,
+			"module" : "AddImage",
+            "params" : {
+                "path" : "../overlays/microcard.png",
+            },
+        },
+    ],
+	"face" : [
+		{
+            "name" : "Background",
+			"module" : "AddBox",
+            "params" : {
+                "color" : "black",
+                "filled" : 1,
+            },
+		}, 
+		{
+            "name" : "Name",
+			"module" : "AddText",
+            "params" : {
+                "x" : 75,
+                "y" : 75,
+                "width" : 300,
+                "height" :150,
+                "font_size" : 50,
+                "text" : "{$name}",
+                "justify" : "left",
+                "text_color" : "{$color}",
+                "font_path" : "/usr/share/fonts/truetype/freefont/FreeMono.ttf",
+                # "outline" : 1,
+            },
+		},
+		{
+            "name" : "LocationWorkerBox",
+            "module" : "AddBox",
+            "disabled" : 0,
+            "params" : {
+                "x" :150,
+                "y" :375,
+                "width" : 150,
+                "height" :150,
+                "filled" : 1,
+                "color" : "{$color}",
+            },
+		},
+                {
+            "name" : "LocationResourceName",
+            "module" : "AddBox",
+            "params" : {
+                "x" : 0,
+                "y" :175,
+                "width" : 450,
+                "height" :135,
+                "color" : "white",
+                "filled" : 1,
+            },
+		},
+		{
+            "name" : "Worker",
+            "disabled" : 0,
+	    "module" : "AddImage",
+            "params" : {
+                "x" : 175,
+                "y" : 405,
+                "resize_x" : 100,
+                "path" : "../icons/pikeman.png",
+                    },
+		},
+		{
+            "name" : "Template",
+            "disabled" : 0,
+			"module" : "AddImage",
+            "params" : {
+                "path" : "../overlays/microcard.png",
+            },
+		},
+	],
+    "components" : [
+        {
+            "name" : "Stony",
+            "quantity" : 1,
+            "description" : "This is the most common NEA type",
+            "color" : "gray",
+            "oppcolor" : "orange",
+            "resource1" : "stone",
+            "resource2" : "stone",
+            "resource3" : "ice",
+        },
+    ],
+}
